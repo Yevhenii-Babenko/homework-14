@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="preload" href="css/fonts.css">
+    <link rel="preload" href="css/fonts.css" as="style">
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="preload" type="text/css" href="css/slick/slick.css"/>
-    <link rel="preload" type="text/css" href="css/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css"  />
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css" />
 </head>
 <body>
 <div class="preloader">
@@ -38,7 +38,6 @@
         </div>
         <div class="right-block">
             <picture>
-                <source srcset="img/img-webp/product.webp" media="min-width: 840px">
                 <source srcset="img/img-webp/product.webp">
                 <img src="img/img-webp/product.webp" alt=""  class="main-image">
 
@@ -84,7 +83,7 @@
             <div class="description">
 <!--                <img src="img/about-1.jpg" alt="">-->
                 <picture>
-                    <source srcset="img/img-webp/about-1.webp" media="min-width: 720px">
+                    <source srcset="img/img-webp/about-1.webp" media="(min-width: 720px)" type="image/webp">
                     <source srcset="img/img-webp/about-1.webp">
                     <img src="img/tinied-img/about-1.jpg" alt="About products">
                 </picture>
@@ -110,8 +109,8 @@
             <div class="description">
 <!--                <img src="img/about-2.jpg" alt="Держатель номера">-->
                 <picture>
-                    <source srcset="img/img-webp/about-2.webp" media="min-width: 720px">
-                    <source srcset="img/img-webp/about-2.webp">
+                    <source srcset="img/img-webp/about-2.webp" media="(min-width: 720px)" type="image/webp">
+                    <source srcset="img/img-webp/about-2.webp" type="image/webp">
                     <img src="img/tinied-img/about-2.jpg" alt="About products">
                 </picture>
             </div>
@@ -130,8 +129,8 @@
             <div class="description">
 <!--                <img src="img/about-3.jpg" alt="">-->
                 <picture>
-                    <source srcset="img/img-webp/about-3.webp" media="min-width: 720px">
-                    <source srcset="img/img-webp/about-3.webp">
+                    <source srcset="img/img-webp/about-3.webp" media="(min-width: 720px)" type="image/webp">
+                    <source srcset="img/img-webp/about-3.webp" type="image/webp">
                     <img src="img/tinied-img/about-3.jpg" alt="About products">
                 </picture>
             </div>
@@ -187,7 +186,7 @@
     <div class="wrapper">
         <h2 class="h2">как работает <span class="yellow">видеопарктроник?</span></h2>
         <div id="video" >
-            <video width="100%" height="100%" controls>
+            <video class="video-player" controls>
                 <source src="video/videoplayback.mp4" type="video/mp4">
                 <source src="video/videoplayback-3gp.3gp" type="video/3gp">
                 Ваш браузер не поддерживает видео тег.
@@ -207,8 +206,8 @@
                 <img src="img/img-webp/girl-in-car.webp" alt="Economies" class="full-width">
             </picture>
             <picture>
-                <source srcset="img/img-webp/broken-car1.webp">
-                <source srcset="img/img-webp/broken-car1.webp">
+                <source srcset="img/img-webp/broken-car1.webp" type="image/webp">
+                <source srcset="img/img-webp/broken-car1.webp" type="image/webp">
                 <img src="img/img-webp/broken-car1.webp" alt="Economies" class="half-width">
             </picture>
             <picture>
@@ -223,8 +222,8 @@
             <p class="cost"><span class="yellow">3990</span> рублей</p>
 <!--            <img src="img/product.jpg" alt="" class="full-width small-height-fix">-->
             <picture>
-                <source srcset="img/img-webp/main-product.webp" media="min-width: 720px">
-                <source srcset="img/tinied-img/product-s.png">
+                <source srcset="img/img-webp/main-product.webp" media="(min-width: 720px)" type="image/webp">
+                <source srcset="img/tinied-img/product-s.png" type="image/webp">
                 <img src="img/tinied-img/product-s.png" alt="Economies" class="full-width small-height-fix">
             </picture>
             <span class="plus yellow">+</span>
@@ -477,7 +476,7 @@
 <script src="js/preloader.js"> </script>
 <!-- jquery connection -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <!-- slider Click connection -->
 <script src="js/slick.min.js"></script>
 <!-- script file connection -->
