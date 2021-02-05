@@ -445,6 +445,21 @@ button {
     width: 48px;
 }
 
+.icon-delivery{
+    background: url("../img/icons/css_sprites-delivery.png") no-repeat;
+    width: 57px;
+    height: 62px;
+}
+.icon__adv1{
+    background-position:0 0;
+}
+.icon__adv2{
+    background-position: -57px 0;
+}
+.icon__adv3{
+    background-position: -115px 0;
+    width: 60px;
+}
 .reasons .reason .square img.width60 {
     width: 60px;
 }
@@ -579,6 +594,7 @@ button {
     display: flex;
     /*align-items: flex-end;*/
     justify-content: flex-end;
+    gap: 10px;
     margin: 10px 0 auto 0;
     vertical-align: top;
     padding-top: 15px;
@@ -631,6 +647,11 @@ button {
     margin-right: 95px;
 }
 
+.adv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .advantages {
     text-align: center;
     display: -webkit-box;

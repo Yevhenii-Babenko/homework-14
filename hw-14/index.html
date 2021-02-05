@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="preload" href="css/fonts.css">
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
@@ -37,18 +37,24 @@
             <div class="timer"></div>
             <button class="btn-order">Заказать</button>
         </div>
-        <div class="right-block"> <!--src="img/product.png"-->
-            <img
-                 srcset="
-                 img/tinied-img/product-s.png 376w,
-                 img/product.png
-                 "
-                 sizes="
-                 (max-width 360px) 350w,
-                 406w
-                 "
-                 src="" alt=""
-                 class="main-image">
+        <div class="right-block">
+            <picture>
+                <source srcset="img/img-webp/product.webp" media="min-width: 840px">
+                <source srcset="img/img-webp/product.webp">
+                <img src="img/img-webp/product.webp" alt=""  class="main-image">
+
+            </picture>
+<!--            <img-->
+<!--                 srcset="-->
+<!--                 img/tinied-img/product-s.png 376w,-->
+<!--                 img/tinied-img/product-s.png-->
+<!--                 "-->
+<!--                 sizes="-->
+<!--                 (max-width 360px) 350w,-->
+<!--                 406w-->
+<!--                 "-->
+<!--                 src="" alt=""-->
+<!--                 class="main-image">-->
             <div class="price">
                 <div class="old-price">6999 грн.</div>
                 <div class="new-price">3999 грн.</div>
@@ -185,7 +191,7 @@
             <video width="100%" height="100%" controls>
                 <source src="video/videoplayback.mp4" type="video/mp4">
                 <source src="video/videoplayback-3gp.3gp" type="video/3gp">
-                Your browser does not support the video tag.
+                Ваш браузер не поддерживает видео тег.
             </video>
         </div>
     </div>
@@ -198,17 +204,15 @@
             <p class="cost"><span class="yellow">6000</span> рублей</p>
 <!--            <img src="img/girl-in-car.jpg" alt="" class="full-width">-->
             <picture>
-                <source srcset="img/girl-in-car.jpg" media="min-width: 720px">
-                <source srcset="img/tinied-img/girl-in-car.jpg">
-                <img src="img/tinied-img/girl-in-car.jpg" alt="Economies" class="full-width">
+                <source srcset="img/img-webp/girl-in-car.webp">
+                <img src="img/img-webp/girl-in-car.webp" alt="Economies" class="full-width">
             </picture>
             <picture>
-                <source srcset="img/broken-car1.jpg" media="min-width: 720px">
+                <source srcset="img/img-webp/broken-car1.webp">
                 <source srcset="img/img-webp/broken-car1.webp">
                 <img src="img/img-webp/broken-car1.webp" alt="Economies" class="half-width">
             </picture>
             <picture>
-                <source srcset="img/broken-car2.jpg" media="min-width: 720px">
                 <source srcset="img/img-webp/broken-car2.webp">
                 <img src="img/img-webp/broken-car2.webp" alt="Economies" class="half-width">
             </picture>
@@ -220,16 +224,15 @@
             <p class="cost"><span class="yellow">3990</span> рублей</p>
 <!--            <img src="img/product.jpg" alt="" class="full-width small-height-fix">-->
             <picture>
-                <source srcset="img/product.jpg" media="min-width: 720px">
+                <source srcset="img/img-webp/main-product.webp" media="min-width: 720px">
                 <source srcset="img/tinied-img/product-s.png">
                 <img src="img/tinied-img/product-s.png" alt="Economies" class="full-width small-height-fix">
             </picture>
             <span class="plus yellow">+</span>
 <!--            <img src="img/gift.jpg" alt="Prize" class="full-width">-->
             <picture>
-                <source srcset="img/gift.jpg" media="min-width: 720px">
-                <source srcset="img/tinied-img/gift.jpg">
-                <img src="img/tinied-img/gift.jpg" alt="Prize" class="full-width">
+                <source srcset="img/img-webp/gift.webp">
+                <img src="img/img-webp/gift.webp" alt="Prize" class="full-width">
             </picture>
         </div>
         <button class="btn-order centred">Заказать</button>
@@ -243,9 +246,8 @@
             <div class="slider">
                 <div class="slider-items"> <!-- <img src="img/review1.jpg" alt="" class="main-review-img"> -->
                     <picture>
-                        <source srcset="img/review1.jpg" media="min-width: 720px">
-                        <source srcset="img/tinied-img/review1.jpg">
-                        <img src="img/tinied-img/review1.jpg" alt="Review" class="main-review-img">
+                        <source srcset="img/img-webp/review1.webp">
+                        <img src="img/img-webp/review1.webp" alt="Review" class="main-review-img">
                     </picture>
                 <p class="review-text">
                     Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
@@ -262,14 +264,13 @@
                     зеркало
                     любой машины, вообщем то что доктор прописал!
                 </p>
-                <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                <div class="review-author"><img src="img/img-webp/review1-ava.webp" alt="" class="ava"><b>Константин</b><i>г.
                     Днепропетровск</i></div>
                 </div>
                 <div class="slider-items"> <!-- <img src="img/review1.jpg" alt="" class="main-review-img"> -->
                     <picture>
-                        <source srcset="img/review1.jpg" media="min-width: 720px">
-                        <source srcset="img/tinied-img/review1.jpg">
-                        <img src="img/tinied-img/review1.jpg" alt="Review" class="main-review-img">
+                        <source srcset="img/img-webp/review1.webp">
+                        <img src="img/img-webp/review1.webp" alt="Review" class="main-review-img">
                     </picture>
                     <p class="review-text">
                         Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
@@ -286,14 +287,13 @@
                         зеркало
                         любой машины, вообщем то что доктор прописал!
                     </p>
-                    <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                    <div class="review-author"><img src="img/img-webp/review1-ava.webp" alt="" class="ava"><b>Константин</b><i>г.
                         Днепропетровск</i></div>
                 </div>
                 <div class="slider-items"> <!-- <img src="img/review1.jpg" alt="" class="main-review-img"> -->
                     <picture>
-                        <source srcset="img/review1.jpg" media="min-width: 720px">
-                        <source srcset="img/tinied-img/review1.jpg">
-                        <img src="img/tinied-img/review1.jpg" alt="Review" class="main-review-img">
+                        <source srcset="img/img-webp/review1.webp">
+                        <img src="img/img-webp/review1.webp" alt="Review" class="main-review-img">
                     </picture>
                     <p class="review-text">
                         Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
@@ -310,14 +310,13 @@
                         зеркало
                         любой машины, вообщем то что доктор прописал!
                     </p>
-                    <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                    <div class="review-author"><img src="img/img-webp/review1-ava.webp" alt="" class="ava"><b>Константин</b><i>г.
                         Днепропетровск</i></div>
                 </div>
                 <div class="slider-items"> <!-- <img src="img/review1.jpg" alt="" class="main-review-img"> -->
                     <picture>
-                        <source srcset="img/review1.jpg" media="min-width: 720px">
-                        <source srcset="img/tinied-img/review1.jpg">
-                        <img src="img/tinied-img/review1.jpg" alt="Review" class="main-review-img">
+                        <source srcset="img/img-webp/review1.webp">
+                        <img src="img/img-webp/review1.webp" alt="Review" class="main-review-img">
                     </picture>
                     <p class="review-text">
                         Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
@@ -334,14 +333,13 @@
                         зеркало
                         любой машины, вообщем то что доктор прописал!
                     </p>
-                    <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                    <div class="review-author"><img src="img/img-webp/review1-ava.webp" alt="" class="ava"><b>Константин</b><i>г.
                         Днепропетровск</i></div>
                 </div>
                 <div class="slider-items"> <!-- <img src="img/review1.jpg" alt="" class="main-review-img"> -->
                     <picture>
-                        <source srcset="img/review1.jpg" media="min-width: 720px">
-                        <source srcset="img/tinied-img/review1.jpg">
-                        <img src="img/tinied-img/review1.jpg" alt="Review" class="main-review-img">
+                        <source srcset="img/img-webp/review1.webp">
+                        <img src="img/img-webp/review1.webp" alt="Review" class="main-review-img">
                     </picture>
                     <p class="review-text">
                         Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
@@ -358,14 +356,13 @@
                         зеркало
                         любой машины, вообщем то что доктор прописал!
                     </p>
-                    <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                    <div class="review-author"><img src="img/img-webp/review1-ava.webp" alt="" class="ava"><b>Константин</b><i>г.
                         Днепропетровск</i></div>
                 </div>
                 <div class="slider-items"> <!-- <img src="img/review1.jpg" alt="" class="main-review-img"> -->
                     <picture>
-                        <source srcset="img/review1.jpg" media="min-width: 720px">
-                        <source srcset="img/tinied-img/review1.jpg">
-                        <img src="img/tinied-img/review1.jpg" alt="Review" class="main-review-img">
+                        <source srcset="img/img-webp/review1.webp">
+                        <img src="img/img-webp/review1.webp" alt="Review" class="main-review-img">
                     </picture>
                     <p class="review-text">
                         Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
@@ -382,32 +379,11 @@
                         зеркало
                         любой машины, вообщем то что доктор прописал!
                     </p>
-                    <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.
+                    <div class="review-author"><img src="img/img-webp/review1-ava.webp" alt="" class="ava"><b>Константин</b><i>г.
                         Днепропетровск</i></div>
                 </div>
             </div>
-<!--            <div class="slide">-->
-<!--                <img src="img/review1.jpg" alt="" class="main-review-img">-->
-<!--                <p class="review-text">-->
-<!--                    Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо-->
-<!--                    дизайн-->
-<!--                    уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3-->
-<!--                    года-->
-<!--                    вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.-->
-<!--                    данные-->
-<!--                    никакие — камеры очень плохого качества… Уже думал что печаль… :( Но вот за пару дней поисков-->
-<!--                    наткнулся на-->
-<!--                    то о чем мечтал действительно — HD Recorder. Нашел его у одного из драйвечан, и у других. Все в-->
-<!--                    восторге от-->
-<!--                    данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное-->
-<!--                    зеркало-->
-<!--                    любой машины, вообщем то что доктор прописал!-->
-<!--                </p>-->
-<!--                <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava"><b>Константин</b><i>г.-->
-<!--                    Днепропетровск</i></div>-->
-<!--            </div>-->
         </div>
-<!--        <img src="img/arrow-right.png" alt="" class="arrow-right">-->
     </div>
 </section>
 <section class="delivery">
@@ -421,13 +397,19 @@
         </ul>
         <p>Мы заботимся о своей репутации, клиенты для нас на первом месте!</p>
         <div class="advantages">
-            <div class="adv"><img src="img/adv1.png" alt="">
+            <div class="adv">
+<!--                <img src="img/adv1.png" alt="">-->
+                <i class="icon-delivery icon__adv1"></i>
                 <div class="adv-title yellow">Оплата при получении</div>
             </div>
-            <div class="adv"><img src="img/adv2.png" alt="">
+            <div class="adv">
+<!--                <img src="img/adv2.png" alt="">-->
+                <i class="icon-delivery icon__adv2"></i>
                 <div class="adv-title yellow">365 дней гарантии</div>
             </div>
-            <div class="adv"><img src="img/adv3.png" alt="">
+            <div class="adv">
+<!--                <img src="img/adv3.png" alt="">-->
+                <i class="icon-delivery icon__adv3"></i>
                 <div class="adv-title yellow">Возврат денег в течение 14 дней</div>
             </div>
         </div>
@@ -464,16 +446,14 @@
         <div class="left-block">
 <!--            <img src="img/product-reverse.jpg" alt="">-->
             <picture>
-                <source srcset="img/product-reverse.jpg" media="min-width: 720px">
-                <source srcset="img/tinied-img/product-reverse.jpg">
-                <img src="img/tinied-img/product-reverse.jpg" alt="Order">
+                <source srcset="img/img-webp/product-reverse.webp">
+                <img src="img/img-webp/product-reverse.webp" alt="Order">
             </picture>
             <span class="plus">+</span>
 <!--            <img src="img/gift-reverse.jpg" alt="">-->
             <picture>
-                <source srcset="img/gift-reverse.jpg" media="min-width: 720px">
-                <source srcset="img/tinied-img/gift-reverse.jpg">
-                <img src="img/tinied-img/gift-reverse.jpg" alt="Order">
+                <source srcset="img/img-webp/gift-reverse.webp">
+                <img src="img/img-webp/gift-reverse.webp" alt="Order">
             </picture>
             <div class="price">
                 <div class="old-price">6999 грн.</div>
